@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your RiseBlocks Account</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #6b46ff;
+    --danger: #d92d2d;
+    --border: #e5e5e7;
+    --code-bg: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f14;
+      --text: #f0f0f5;
+      --muted: #a8a8b0;
+      --accent: #8a5bff;
+      --danger: #ff5252;
+      --border: #2a2a30;
+      --code-bg: #1a1a22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 {
+    font-size: 2.3rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .lead { color: var(--muted); margin: 0 0 32px; }
+  h2 {
+    font-size: 1.3rem;
+    margin: 36px 0 12px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .option-card {
+    background: var(--code-bg);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 0;
+    border-left: 4px solid var(--accent);
+  }
+  .option-card.danger { border-left-color: var(--danger); }
+  .option-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+  }
+  .option-card .what {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+  .step-list {
+    counter-reset: step;
+    padding-left: 0;
+    list-style: none;
+  }
+  .step-list li {
+    counter-increment: step;
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 14px;
+  }
+  .step-list li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 0.9em;
+  }
+  .email-btn {
+    display: inline-block;
+    margin: 12px 0;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .email-btn:hover { opacity: 0.9; }
+  .email-btn.danger { background: var(--danger); }
+  code {
+    background: var(--code-bg);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  a { color: var(--accent); }
+  .info-box {
+    background: var(--code-bg);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  .info-box strong { color: var(--text); }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Delete Your RiseBlocks Data</h1>
+<p class="lead">You can request deletion of your account or specific data at any time. Choose one of the options below.</p>
+
+<h2>Option 1: Delete My Account and All Data</h2>
+
+<div class="option-card danger">
+  <h3>🗑️ Full account deletion</h3>
+  <p class="what">This permanently removes your account, profile, sign-in identity, gameplay history, leaderboard entries, and any data linked to your user ID.</p>
+
+  <ol class="step-list">
+    <li>Tap the email button below (or compose a new email manually).</li>
+    <li>In the subject line, write: <code>Account Deletion Request</code></li>
+    <li>In the body, include the email address associated with your RiseBlocks account.</li>
+    <li>Send the email. We'll confirm receipt within 48 hours and complete deletion within 30 days.</li>
+  </ol>
+
+  <a class="email-btn danger" href="mailto:simbar3o7@gmail.com?subject=Account%20Deletion%20Request&body=Hi%2C%0A%0APlease%20delete%20my%20RiseBlocks%20account%20and%20all%20associated%20data.%0A%0AAccount%20email%3A%20%5Byour%20email%20here%5D%0A%0AThank%20you.">
+    📧 Email Account Deletion Request
+  </a>
+</div>
+
+<h2>Option 2: Delete Specific Data Only (Keep Account)</h2>
+
+<div class="option-card">
+  <h3>📊 Data-only deletion</h3>
+  <p class="what">Use this if you'd like to remove certain data — for example your gameplay statistics or leaderboard entries — but keep your account active.</p>
+
+  <ol class="step-list">
+    <li>Tap the email button below.</li>
+    <li>In the subject line, write: <code>Data Deletion Request</code></li>
+    <li>In the body, list the data you want deleted (e.g. "leaderboard scores", "gameplay history").</li>
+    <li>Include the email address associated with your account.</li>
+  </ol>
+
+  <a class="email-btn" href="mailto:simbar3o7@gmail.com?subject=Data%20Deletion%20Request&body=Hi%2C%0A%0APlease%20delete%20the%20following%20data%20from%20my%20RiseBlocks%20account%3A%0A%0A-%20%5Bdescribe%20what%20to%20delete%5D%0A%0AAccount%20email%3A%20%5Byour%20email%20here%5D%0A%0AThank%20you.">
+    📧 Email Data Deletion Request
+  </a>
+</div>
+
+<h2>What Gets Deleted</h2>
+
+<div class="info-box">
+  <p><strong>Removed:</strong></p>
+  <ul>
+    <li>Account profile (email, name, photo URL, user ID)</li>
+    <li>Game progress synced to our servers (best scores, streaks, history)</li>
+    <li>Leaderboard entries</li>
+    <li>Pro subscription entitlement records linked to your user ID</li>
+    <li>Any pending support correspondence</li>
+  </ul>
+
+  <p style="margin-top: 16px;"><strong>Retained (where legally required):</strong></p>
+  <ul>
+    <li>Anonymized financial / transaction records (kept by Apple App Store and Google Play for tax and accounting purposes — we cannot delete these on their behalf)</li>
+    <li>Aggregated analytics that cannot be linked back to you personally</li>
+  </ul>
+
+  <p style="margin-top: 16px;"><strong>Note:</strong> Local game data stored only on your device (such as best scores cached locally) is removed automatically when you uninstall the app or clear its storage from your phone settings.</p>
+</div>
+
+<h2>How Long Does It Take?</h2>
+
+<ul>
+  <li><strong>Acknowledgement:</strong> within 48 hours</li>
+  <li><strong>Verification:</strong> we may ask you to confirm your identity by replying from the email associated with your account</li>
+  <li><strong>Completion:</strong> within 30 days of verification</li>
+</ul>
+
+<h2>Cancelling Your Subscription First (Recommended)</h2>
+
+<p>If you have an active RiseBlocks Pro subscription, please cancel it <em>before</em> requesting account deletion. We can delete your account, but billing is managed by Apple / Google and continues unless you cancel through their systems:</p>
+<ul>
+  <li><strong>iOS:</strong> Settings → [Your Name] → Subscriptions → RiseBlocks Pro → Cancel</li>
+  <li><strong>Android:</strong> Google Play Store → Profile → Payments &amp; subscriptions → Subscriptions → RiseBlocks Pro → Cancel</li>
+</ul>
+
+<h2>Questions?</h2>
+
+<p>For any questions about this process, contact us at <a href="mailto:simbar3o7@gmail.com">simbar3o7@gmail.com</a> or visit our <a href="support.html">Support page</a>. See our <a href="privacy.html">Privacy Policy</a> for full details on how we handle your data.</p>
+
+<footer>
+  © 2026 RiseBlocks. All rights reserved.
+</footer>
+
+</main>
+</body>
+</html>
